@@ -1,12 +1,12 @@
 export default {
     clientID: '6ec612d9-2358-466c-90d4-929036e0b67b',
 
-    wizardUriBase: 'http://localhost:8080/wizard/',
+    wizardUriBase: 'https://digitalbasedemo.herokuapp.com/wizard/',
     // wizardUriBase: 'https://mypurecloud.github.io/purecloud-premium-app/wizard/',
 
     // The actual URL of the landing page of your web app or your web site (when wizard has been run).
     // previously - defined as premiumAppURL
-    redirectURLOnWizardCompleted: 'http://localhost:8080/premium-app-sample/index.html',
+    redirectURLOnWizardCompleted: 'https://digitalbasedemo.herokuapp.com/premium-app-sample/index.html',
     // redirectURLOnWizardCompleted: 'https://mypurecloud.github.io/purecloud-premium-app/premium-app-sample/index.html',
     redirectURLWithParams: true,
 
