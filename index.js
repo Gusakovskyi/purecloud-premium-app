@@ -4,4 +4,4 @@ var app = express();
 app.use(express.static(__dirname+ '/docs'));
 
 
-app.listen(80, () => console.log('Listening on 80'));
+app.listen(process.env.PORT || 8080, () => console.log('Listening on 80'));
