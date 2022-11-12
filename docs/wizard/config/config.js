@@ -1,13 +1,13 @@
 export default {
-    clientID: 'fd2ba742-446f-46c5-bbbc-1cad2f34ac3a',
+    clientID: '6ec612d9-2358-466c-90d4-929036e0b67b',
 
-    // wizardUriBase: 'http://localhost:8080/wizard/',
-    wizardUriBase: 'https://mypurecloud.github.io/purecloud-premium-app/wizard/',
+    wizardUriBase: 'http://localhost:8080/wizard/',
+    // wizardUriBase: 'https://mypurecloud.github.io/purecloud-premium-app/wizard/',
 
     // The actual URL of the landing page of your web app or your web site (when wizard has been run).
     // previously - defined as premiumAppURL
-    // redirectURLOnWizardCompleted: 'http://localhost:8080/premium-app-sample/index.html',
-    redirectURLOnWizardCompleted: 'https://mypurecloud.github.io/purecloud-premium-app/premium-app-sample/index.html',
+    redirectURLOnWizardCompleted: 'http://localhost:8080/premium-app-sample/index.html',
+    // redirectURLOnWizardCompleted: 'https://mypurecloud.github.io/purecloud-premium-app/premium-app-sample/index.html',
     redirectURLWithParams: true,
 
     // Genesys Cloud assigned name for the premium app
@@ -22,7 +22,7 @@ export default {
     premiumWidgetIntegrationTypeId: 'premium-widget-example',
 
     // The minimum permission required for a user to access the Premium App.
-    // NOTE: During initial development please use the default permission 
+    // NOTE: During initial development please use the default permission
     //      'integration:examplePremiumApp:view'. Once your premium app is approved,
     //      the unique integration domain will be generated and this must be updated.
     // previously - defined as viewPermission
@@ -33,7 +33,7 @@ export default {
     checkProductBYOC: false,
 
     // Default Values for fail-safe/testing. Shouldn't have to be changed since the app
-    // must be able to determine the environment from the query parameter 
+    // must be able to determine the environment from the query parameter
     // of the integration's URL
     defaultPcEnvironment: 'mypurecloud.com',
     defaultLanguage: 'en-us',
@@ -45,7 +45,7 @@ export default {
     },
     enableLanguageSelection: true,
 
-    // The names of the query parameters to check in 
+    // The names of the query parameters to check in
     // determining language and environment
     // Ex: www.electric-sheep-app.com?langTag=en-us&environment=mypurecloud.com
     languageQueryParam: 'langTag',
@@ -109,7 +109,7 @@ export default {
                 'description': 'Generated Client that\'s passed to the App Backend',
                 'roles': ['Role'],
                 'authorizedGrantType': 'CLIENT_CREDENTIALS',
-                /** NOTE: 
+                /** NOTE:
                  * If you want to learn how you can send the created credentials back to your system,
                  * Please read about the Post Custom Setup module here:
                  * https://developer.genesys.cloud/appfoundry/premium-app-wizard/7-custom-setup#post-custom-setup-module
@@ -160,7 +160,7 @@ export default {
     },
 
     // These are the necessary scopes that the Vendor Wizard's OAuth Client (defined in Vendor's org) must have to allow the wizard to install or uninstall
-    // This is for information only, to make it easier to find what the Vendor Wizard's OAuth Client (Implicit Grant type, Authorization Code Grant type) needs to be set with 
+    // This is for information only, to make it easier to find what the Vendor Wizard's OAuth Client (Implicit Grant type, Authorization Code Grant type) needs to be set with
     installScopes: {
         'custom': [],
         'wizard': ['user-basic-info', 'integrations'],
